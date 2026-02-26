@@ -1,0 +1,35 @@
+{
+  "author": "Jaco Greeff <jacogr@gmail.com>",
+  "bugs": "https://github.com/polkadot-js/extension/issues",
+  "description": "Metamask compatibility layer",
+  "engines": {
+    "node": ">=16"
+  },
+  "homepage": "https://github.com/polkadot-js/extension/tree/master/packages/extension-compat-metamask#readme",
+  "license": "Apache-2.0",
+  "name": "@polkadot/extension-compat-metamask",
+  "repository": {
+    "directory": "packages/extension-compat-metamask",
+    "type": "git",
+    "url": "https://github.com/polkadot-js/extension.git"
+  },
+  "sideEffects": [
+    "./detectPackage.js",
+    "./detectPackage.cjs"
+  ],
+  "type": "module",
+  "version": "0.46.5",
+  "main": "index.js",
+  "dependencies": {
+    "@metamask/detect-provider": "^2.0.0",
+    "@polkadot/extension-inject": "0.46.5",
+    "@polkadot/types": "^10.9.1",
+    "@polkadot/util": "^12.3.2",
+    "tslib": "^2.5.3",
+    "web3": "^1.10.0"
+  },
+  "peerDependencies": {
+    "@polkadot/api": "*",
+    "@polkadot/util": "*"
+  }
+}
